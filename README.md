@@ -1,1 +1,5 @@
 # Step-free-PDAc-final
+
+Both the popular primal-dual algorithms (PDA) of Chambolle-Pock and Chang-Yang with convex combination and larger stepsizes are full-splitting for solving bilinear saddle point problem. However for both methods, the value of stepsize is dependent on the spectral norm of the linear transform or is estimated by using linesearch, which usually overconservative or requires extra computing of proximal operator or linear transform, and then may result in unsatisfactory
+numerical efficiency in practice. On the basis of the Chang-Yang PDA framework, we propose a stepsize-free primal dual algorithm by adding proximal item to Lagrangian function and solving linear inverse problem for the dual variable. The proposed method not only does not require the spectral norm of the linear transform or linesearch to estimate stepsizes, but also holds cheap computation on the linear inverse problem for the cases with one variable being modest, as the
+matrix decomposition is involved only once.  Finally, we demonstrate the performance of the proposed stepsize-free PDA method via preliminary numerical experiments.
